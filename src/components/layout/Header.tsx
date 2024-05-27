@@ -24,7 +24,7 @@ function Header() {
             info@ndiigbogermany.org
           </NavLink>
         </div>
-        <div className="flex px-[7%]  justify-between  items-center pt-7 font-medium">
+        <div className="flex 2xl:px-[7%] px-[2%]  justify-between  items-center pt-7 font-medium">
           <img src="/logo.svg" alt="logo" className=" scale-75" />
         <div className="flex items-center gap-20">
         <nav className="w-full scroll lg:text-[1.05rem] !text-lg  font-medium ">
@@ -194,12 +194,12 @@ function Header() {
                   </span>
                 </p>
                 <div
-                  className={` py-3 absolute w-[21rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  ${
+                  className={` py-3 absolute w-[15rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  ${
                     open3 ? "top-10" : "-top-[30rem]"
                   }`}
                 >
                   <NavLink
-                    className=" py-3 px-2 w-full flex justify-center items-center gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
+                    className=" py-3 px-2 w-full flex  items-center gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                     onClick={() => {
                       setOpen3((prev) => !prev);
                       setMenu(false);
@@ -210,7 +210,7 @@ function Header() {
                     Gallery
                   </NavLink>
                   <NavLink
-                    className=" py-3 px-2 w-full flex items-center justify-center  gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
+                    className=" py-3 px-2 w-full flex items-center   gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                     onClick={() => {
                       setOpen3((prev) => !prev);
                       setMenu(false);

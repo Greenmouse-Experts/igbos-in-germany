@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-  --blue-primary: "#202A44";
+  --color-primary: "#015907";
 }
 * {
   padding: 0;
@@ -297,4 +297,24 @@ a{
 .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
+}
+.btn::after{
+  display: inline-block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 0.75rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn::after {
+  background-color:#015907;
+ }
+ .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
