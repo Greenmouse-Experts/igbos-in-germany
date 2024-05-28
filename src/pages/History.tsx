@@ -1,4 +1,4 @@
-import React from "react";
+
 import Banner from "../components/Banner";
 import BtnWhite from "../components/Buttons/BtnWhite";
 import List from "../components/List";
