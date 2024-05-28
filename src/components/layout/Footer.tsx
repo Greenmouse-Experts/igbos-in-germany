@@ -5,7 +5,7 @@ function Footer() {
 
   const {pathname} =  useLocation()
 
-  console.log(pathname)
+  // console.log(pathname)
   return (
     <footer className={`${pathname === "/" ? "bg-colorPrimary" : "bg-white"} pt-3 relative px-0`}>
       <div className=" bg-[#150E09] py-16">
