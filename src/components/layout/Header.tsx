@@ -62,7 +62,7 @@ function Header() {
                       setOpen((prev) => !prev);
                       setMenu(false);
                     }}
-                    to="/about"
+                    to="/history"
                   >
                    
                     Our History
@@ -84,7 +84,7 @@ function Header() {
                       setOpen((prev) => !prev);
                       setMenu(false);
                     }}
-                    to="/Excos / Leadership"
+                    to="/"
                   >
                     
                     Excos / Leadership

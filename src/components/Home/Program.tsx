@@ -1,4 +1,4 @@
-import BtnPrimary from "../BtnPrimary";
+import BtnPrimary from "../Buttons/BtnPrimary";
 import List from "../List";
 
 function Program() {
@@ -34,7 +34,11 @@ function Program() {
         />
       </div>
 
-      <img src="/img/program-img.png" alt=""  className="absolute bottom-0 left-1/2 transform -translate-x-1/2  scale-75"/>
+      <img
+        src="/img/program-img.png"
+        alt=""
+        className="absolute bottom-0 left-1/2 transform -translate-x-1/2  scale-75"
+      />
     </section>
   );
 }

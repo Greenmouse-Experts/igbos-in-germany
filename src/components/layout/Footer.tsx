@@ -1,15 +1,20 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+
 
 function Footer() {
+
+  const {pathname} =  useLocation()
+
+  console.log(pathname)
   return (
-    <footer className="bg-colorPrimary pt-3 relative px-0">
+    <footer className={`${pathname === "/" ? "bg-colorPrimary" : "bg-white"} pt-3 relative px-0`}>
       <div className=" bg-[#150E09] py-16">
-        <div className="w-[60%] absolute top-0 left-1/2 transform -translate-x-1/2   bg-colorPrimary h-10 clip-path px-[10%] flex justify-between items-center text-white font-normal"></div>
+        <div className={`${pathname === "/" ? "bg-colorPrimary" : "bg-white"} w-[60%] absolute top-0 left-1/2 transform -translate-x-1/2 h-10 clip-path px-[10%] flex justify-between items-center text-white font-normal`}></div>
 
         <div className="flex justify-between px-[8%]  items-end pb-10">
           <img src="/logo-footer.svg" alt="logo" className=" scale-75" />
 
-          <nav className="flex text-[#ACACAC] gap-[3.5rem]">
+          <nav className="flex text-[#ACACAC] gap-[3.5rem] flex-wrap">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>

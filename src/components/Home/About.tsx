@@ -1,4 +1,4 @@
-import BtnPrimary from "../BtnPrimary";
+import BtnPrimary from "../Buttons/BtnPrimary";
 
 function About() {
   return (
@@ -13,7 +13,7 @@ function About() {
       <div className="lg:w-[50%] w-full">
         <p className="text-colorPrimary font-semibold">ABOUT US</p>
         <h4 className=" font-semibold font-syne text-black">
-          Founding and Early <br/> Development
+          Founding and Early <br /> Development
         </h4>
         <p className=" 2xl:mt-3 mt-3 font-sora text-grayPrimary2">
           The foundation stone of this Great body was laid in Stuttgart on the
@@ -29,7 +29,7 @@ function About() {
           deliberations gave the idea their blessing.
         </p>
         <div>
-            <BtnPrimary/>
+          <BtnPrimary />
         </div>
       </div>
     </section>
