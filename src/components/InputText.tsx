@@ -13,7 +13,7 @@ function InputText({label, type, placeholder,}:InputProps) {
       <input
         type={type ? type : 'text'}
         placeholder={placeholder}
-        className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-bluePrimary h-[50px] pl-5 w-full"
+        className="bg-[#F4F4F4] 2xl:h-[60px] placeholder:text-bluePrimary h-[50px] pl-5 w-full rounded-md"
       />
     </div>
   );
