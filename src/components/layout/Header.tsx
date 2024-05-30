@@ -17,12 +17,12 @@ function Header() {
     <header className=" bg-colorPrimary pt-4  w-full relative text-lg font-montserrat">
       <div className=" bg-white h-[8rem] ">
         <div className="w-[55%] absolute top-0 left-1/2 transform -translate-x-1/2    bg-colorPrimary h-12 clip-path px-[6%] lg:flex hidden justify-between items-center text-white font-normal">
-          <NavLink to="#" className="flex items-center gap-4 font-light">
+          <NavLink to="tel:+49 162 2906722" className="flex items-center gap-4 font-light">
             {" "}
             <span>
               <FiPhone size={20} />
             </span>
-            Phone number
+            +49 162 2906722
           </NavLink>
           <NavLink
             to="mailto:info@ndiigbogermany.org"
