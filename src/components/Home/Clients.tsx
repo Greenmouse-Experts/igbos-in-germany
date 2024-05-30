@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import BtnWhite from "../Buttons/BtnWhite";
 
 function Clients() {
   const [sliderRef, setSliderRef] = useState<Slider | null>(null);
@@ -48,41 +49,24 @@ function Clients() {
       <section className="border-t border-grayPrimary  bg-[#F9F9F9] text-black pb-10 pt-16 ">
         <div className="flex justify-between items-center mb-10">
           <h4 className=" w-fit  ">Our Partner Organizations</h4>
-          <div className="flex gap-5 items-center justify-end">
-            <button
-              style={{
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                fontWeight: 500,
-                fontSize: 14,
-              }}
-              color="#2d3253"
-              onClick={sliderRef?.slickPrev}
-            >
+          <div className="flex gap-5 items-center justify-end h-fit">
+          
+            <div 
+              onClick={sliderRef?.slickPrev} className="flex items-center text-black font-semibold cursor-pointer">
               <span>
-                {" "}
-                <FiArrowLeft />
+                <FiArrowLeft color="black" />
               </span>
-              &nbsp; Prev
-            </button>
+              <p>Prev</p>
+            </div>
 
-            <button
-              style={{
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                fontWeight: 500,
-                fontSize: 14,
-              }}
-              color="#2d3253"
-              onClick={sliderRef?.slickNext}
-            >
-              Next &nbsp;
+            <div 
+              onClick={sliderRef?.slickNext} className="flex items-center text-black font-semibold cursor-pointer">
+              <p>Next</p>
               <span>
-                <FiArrowRight />
+                <FiArrowRight color="black" />
               </span>
-            </button>
+            </div>
+
           </div>
         </div>
         <div className=" transition-all">
@@ -134,7 +118,7 @@ function Clients() {
         <div className="flex items-center mt-20 flex-wrap justify-between"></div>
       </section>
 
-      <section className=" bg-[url('/img/igbo-attire.png')] pt-10 pb-32 text-white text-center mt-28">
+      <section className=" bg-[url('/img/igbo-attire.png')] flex flex-col items-center text-white text-center mt-28">
         <p className=" text-3xl font-semibold">
           The Igbo Cultural Association of Germany is a non-profit organization
           dedicated to preserving awareness of the culture of the Igbo People in
@@ -144,6 +128,7 @@ function Clients() {
           Membership is open to All official registered Igbo Unions/Associations
           in Germany.
         </p>
+        <BtnWhite color="green" />
       </section>
     </>
   );
