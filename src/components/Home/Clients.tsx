@@ -47,7 +47,7 @@ function Clients() {
     <>
       <section className="border-t border-grayPrimary  bg-[#F9F9F9] text-black pb-10 pt-16 ">
         <div className="flex justify-between items-center mb-10">
-          <h4 className=" ">Our Partner Organizations</h4>
+          <h4 className=" w-fit  ">Our Partner Organizations</h4>
           <div className="flex gap-5 items-center justify-end">
             <button
               style={{
