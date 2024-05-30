@@ -8,13 +8,13 @@ function Event() {
       <div className="lg:w-[55%] w-full sm:mb-0 mb-48">
         <p className=" font-semibold">EVENTS</p>
         <h4 className=" font-semibold ">Up Coming Events</h4>
-        <div className="mt-5 flex sm:flex-row flex-col items-center  xl:h-[15rem] h-[18rem] ">
+        <div className="mt-5 flex sm:flex-row flex-col items-center  xl:h-[18rem] lg:h-[20rem] h-[18rem] ">
           <img
             src="/img/event.png"
             alt="event"
-            className=" sm:w-[50%] w-full object-cover object-center xl:h-[15rem] h-[18rem]"
+            className=" sm:w-[50%] w-full object-cover object-center xl:h-[18rem] lg:h-[20rem] h-[18rem]"
           />
-          <div className=" bg-white p-5 text-[#111111]  flex flex-col gap-2 sm:w-[50%] w-full xl:h-[15rem] h-[18rem]">
+          <div className=" bg-white p-5 text-[#111111]  flex flex-col justify-center gap-2 sm:w-[50%] w-full xl:h-[18rem] lg:h-[20rem] h-[18rem]">
             <p className=" text-lg font-medium">Multicultural Festival</p>
             <p className="">
               Celebrate the rich tapestry of cultures in our community with live
