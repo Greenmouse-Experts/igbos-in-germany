@@ -18,13 +18,13 @@ function Banner({ page, img }: BannerProps) {
         {page}
       </h4>
       <div className="mt-4 flex items-center">
-        <span className="text-white font-syne ">
-          <NavLink className="font-syne" to="/">
+        <span className="text-white  ">
+          <NavLink className="" to="/">
             Home
           </NavLink>
         </span>
         <span>
-          <MdOutlineKeyboardArrowRight color="white" /></span><span className="font-syne sm:text-lg text-white"> {page} </span>
+          <MdOutlineKeyboardArrowRight color="white" /></span><span className=" sm:text-lg text-white"> {page} </span>
       </div>
      </div>
       

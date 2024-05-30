@@ -7,7 +7,7 @@ function AppLayout() {
   return (
     <>
       <Header />
-      <main className="">
+      <main className="xl:pt-[5rem]">
         <Outlet />
       </main>
       <Footer />

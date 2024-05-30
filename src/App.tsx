@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AppLayout from "./components/layout/AppLayout";
 import Home from "./pages/Home";
 import History from "./pages/History";
+import Aims from "./pages/Aims";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
         path: "/history",
         element: <History />,
       },
+      {
+        path: "/objective",
+        element: <Aims />,
+      }
     
     ],
   },
