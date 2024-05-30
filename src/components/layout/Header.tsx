@@ -213,7 +213,7 @@ function Header() {
                         setOpen3((prev) => !prev);
                         setMenu(false);
                       }}
-                      to="/"
+                      to="/gallery"
                     >
                       Gallery
                     </NavLink>
@@ -239,7 +239,7 @@ function Header() {
                         setOpen3((prev) => !prev);
                         setMenu(false);
                       }}
-                      to="/"
+                      to="/gallery"
                     >
                       Gallery
                     </NavLink>
@@ -271,7 +271,7 @@ function Header() {
             <div>
               <NavLink
                 to="#"
-                className="text-white bg-colorPrimary rounded-xl py-3 px-8 text-nowrap btn"
+                className="text-white bg-colorPrimary rounded-xl py-3 px-8 text-nowrap btn btn-green"
               >
                 Sign In
               </NavLink>

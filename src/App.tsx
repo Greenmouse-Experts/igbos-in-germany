@@ -3,6 +3,8 @@ import AppLayout from "./components/layout/AppLayout";
 import Home from "./pages/Home";
 import History from "./pages/History";
 import Aims from "./pages/Aims";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: "/objective",
         element: <Aims />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       }
     
     ],
