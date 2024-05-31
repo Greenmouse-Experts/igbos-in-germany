@@ -7,6 +7,8 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Excos from "./pages/Excos";
 import Partners from "./pages/Partners";
+import Programs from "./pages/Programs";
+import Event from "./pages/Event";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
       {
         path: "/partners",
         element: <Partners />,
+      },
+      {
+        path:"/Programs",
+        element:<Programs/>
+      },
+      {
+        path:"/events",
+        element:<Event/>
       }
     
     ],

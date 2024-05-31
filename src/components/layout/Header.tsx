@@ -210,12 +210,14 @@ function Header() {
                   </NavLink>
                 </li>
                 <li className="relative" onMouseLeave={() => setOpen2(false)}>
-                  <p
-                    className="lg:text-[1.05rem] text-lg  py-2  cursor-pointer flex items-center gap-2"
-                    onMouseEnter={() => setOpen2(true)}
+                <NavLink
+                    onClick={() => setMenu(false)}
+                    className="lg:text-[1.05rem] text-lg w-full "
+                    to="/programs"
                   >
                     Programs
-                  </p>
+                  </NavLink>
+                 
                 </li>
                 <li className="relative" onMouseLeave={() => setOpen3(false)}>
                   <p
@@ -251,7 +253,7 @@ function Header() {
                         setOpen3((prev) => !prev);
                         setMenu(false);
                       }}
-                      to="/"
+                      to="/events"
                     >
                         <span>
                         <RiCalendarEventLine size={25}  className="text-colorPrimary group-hover:text-white" />
