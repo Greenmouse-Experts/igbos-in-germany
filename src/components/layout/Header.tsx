@@ -177,12 +177,14 @@ function Header() {
                 </li>
 
                 <li className="relative" onMouseLeave={() => setOpen1(false)}>
-                  <p
-                    className="lg:text-[1.05rem] text-lg  py-2  cursor-pointer flex items-center gap-2"
-                    onMouseEnter={() => setOpen1(true)}
+                <NavLink
+                    onClick={() => setMenu(false)}
+                    className="lg:text-[1.05rem] text-lg w-full "
+                    to="/partners"
                   >
                     Partners
-                  </p>
+                  </NavLink>
+                 
                 </li>
                 <li className="relative" onMouseLeave={() => setOpen2(false)}>
                   <p
