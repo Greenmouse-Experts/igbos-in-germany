@@ -1,7 +1,13 @@
 import { useState } from "react";
+import { AiOutlineAim } from "react-icons/ai";
+import { CgNotes } from "react-icons/cg";
 import { FiPhone } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdKeyboardArrowDown, MdOutlineEmail } from "react-icons/md";
+import { HiOutlinePhoto } from "react-icons/hi2";
+import { LiaUsersSolid } from "react-icons/lia";
+import { MdKeyboardArrowDown, MdOutlineEmail,  } from "react-icons/md";
+import { PiClockCounterClockwiseBold } from "react-icons/pi";
+import { RiCalendarEventLine, RiTeamLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 
 function Header() {
@@ -17,7 +23,10 @@ function Header() {
     <header className=" bg-colorPrimary pt-4  w-full relative text-lg font-montserrat">
       <div className=" bg-white h-[8rem] ">
         <div className="w-[55%] absolute top-0 left-1/2 transform -translate-x-1/2    bg-colorPrimary h-12 clip-path px-[6%] lg:flex hidden justify-between items-center text-white font-normal">
-          <NavLink to="tel:+49 162 2906722" className="flex items-center gap-4 font-light">
+          <NavLink
+            to="tel:+49 162 2906722"
+            className="flex items-center gap-4 font-light"
+          >
             {" "}
             <span>
               <FiPhone size={20} />
@@ -39,10 +48,10 @@ function Header() {
             <img src="/logo.svg" alt="logo" />
           </NavLink>
           <div
-          className={`flex md:flex xl:flex-row md:px-0 md:py-0 flex-col  2xl:gap-[53px]  fixed ml-auto z-40 w-[24rem] h-screen  xl:w-fit xl:h-auto md:items-center py-5 bg-white gap-[25px] px-5 ${
-            menu ? "left-0 top-[8rem]" : "left-[-1000px] top-[8rem]"
-          } left-0 unset transition-all`}
-        >
+            className={`flex md:flex xl:flex-row md:px-0 md:py-0 flex-col  2xl:gap-[53px]  fixed ml-auto z-40 w-[24rem] h-screen  xl:w-fit xl:h-auto md:items-center py-5 bg-white gap-[25px] px-5 ${
+              menu ? "left-0 top-[8rem]" : "left-[-1000px] top-[8rem]"
+            } left-0 unset transition-all`}
+          >
             <nav className="w-full scroll lg:text-[1.05rem] !text-lg  font-medium ">
               <ul className="md:flex xl:flex-row flex-col xl:gap-14 xl:items-center items-start xl:pt-0 xl:pl-0  sm:pl-20 pl-10 pt-3  gap-5 ">
                 <li className="">
@@ -73,53 +82,68 @@ function Header() {
                     }`}
                   >
                     <NavLink
-                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300 "
+                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center group text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300 "
                       onClick={() => {
                         setOpen((prev) => !prev);
                         setMenu(false);
                       }}
                       to="/history"
                     >
+                      <span>
+                        <PiClockCounterClockwiseBold size={25}  className="text-colorPrimary group-hover:text-white" />
+                      </span>
                       Our History
                     </NavLink>
                     <NavLink
-                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
+                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center group text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                       onClick={() => {
                         setOpen((prev) => !prev);
                         setMenu(false);
                       }}
                       to="/objective"
                     >
+                       <span>
+                        <AiOutlineAim size={25}  className="text-colorPrimary group-hover:text-white" />
+                      </span>
                       Aims and Objectives
                     </NavLink>
                     <NavLink
-                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
+                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center group text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                       onClick={() => {
                         setOpen((prev) => !prev);
                         setMenu(false);
                       }}
                       to="/excos"
                     >
+                       <span>
+                        <RiTeamLine size={25}  className="text-colorPrimary group-hover:text-white" />
+                      </span>
                       Excos / Leadership
                     </NavLink>
                     <NavLink
-                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
+                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center group text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                       onClick={() => {
                         setOpen((prev) => !prev);
                         setMenu(false);
                       }}
                       to="#"
                     >
+                       <span>
+                        <CgNotes size={25}  className="text-colorPrimary group-hover:text-white" />
+                      </span>
                       Our Constitution
                     </NavLink>
                     <NavLink
-                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
+                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center group text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                       onClick={() => {
                         setOpen((prev) => !prev);
                         setMenu(false);
                       }}
                       to="#"
                     >
+                       <span>
+                        <LiaUsersSolid size={25}  className="text-colorPrimary group-hover:text-white" />
+                      </span>
                       How to be a Member
                     </NavLink>
                   </div>
@@ -177,14 +201,13 @@ function Header() {
                 </li>
 
                 <li className="relative" onMouseLeave={() => setOpen1(false)}>
-                <NavLink
+                  <NavLink
                     onClick={() => setMenu(false)}
                     className="lg:text-[1.05rem] text-lg w-full "
                     to="/partners"
                   >
                     Partners
                   </NavLink>
-                 
                 </li>
                 <li className="relative" onMouseLeave={() => setOpen2(false)}>
                   <p
@@ -210,23 +233,29 @@ function Header() {
                     }`}
                   >
                     <NavLink
-                      className=" py-3 px-2 w-full flex  items-center gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
+                      className=" py-3 px-2 w-full flex  items-center gap-4 text-center group text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                       onClick={() => {
                         setOpen3((prev) => !prev);
                         setMenu(false);
                       }}
                       to="/gallery"
                     >
+                         <span>
+                        <HiOutlinePhoto size={25}  className="text-colorPrimary group-hover:text-white" />
+                      </span>
                       Gallery
                     </NavLink>
                     <NavLink
-                      className=" py-3 px-2 w-full flex items-center   gap-4 text-center text-bluePrimary text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
+                      className=" py-3 px-2 w-full flex items-center   gap-4 text-center group text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
                       onClick={() => {
                         setOpen3((prev) => !prev);
                         setMenu(false);
                       }}
                       to="/"
                     >
+                        <span>
+                        <RiCalendarEventLine size={25}  className="text-colorPrimary group-hover:text-white" />
+                      </span>
                       Events
                     </NavLink>
                   </div>
@@ -284,7 +313,7 @@ function Header() {
             className=" block 2xl:hidden xl:hidden cursor-pointer"
             onClick={() => setMenu((open) => !open)}
           >
-           <GiHamburgerMenu size={40}  color="#015907"/>
+            <GiHamburgerMenu size={40} color="#015907" />
           </div>
         </div>
       </div>

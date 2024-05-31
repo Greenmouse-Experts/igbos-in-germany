@@ -27,8 +27,8 @@ function Excos() {
           />
           <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
             <div>
-              <h6 className="text-xl font-semibold ">LLLLL</h6>
-              <p className="font-normal text-base mt-2">Executive Director</p>
+              <h6 className="text-xl font-semibold ">Mr. J. Maurice Ifeanyi Ezeani</h6>
+              <p className="font-normal text-base mt-2">Deputy Coordinator</p>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ function Excos() {
           />
           <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
             <div>
-              <h6 className="text-xl font-semibold ">LLLLL</h6>
+              <h6 className="text-xl font-semibold ">Joseph Chinasa Ezeji</h6>
               <p className="font-normal text-base mt-2">Secretary</p>
             </div>
           </div>
@@ -92,7 +92,7 @@ function Excos() {
           />
           <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
             <div>
-              <h6 className="text-xl font-semibold ">LLLL</h6>
+              <h6 className="text-xl font-semibold ">High Chief Obyzed Obinnaya</h6>
               <p className="font-normal text-base mt-2">Social Secretary</p>
             </div>
           </div>
@@ -105,7 +105,7 @@ function Excos() {
           />
           <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
             <div>
-              <h6 className="text-xl font-semibold ">LLLL</h6>
+              <h6 className="text-xl font-semibold ">Mrs Martha Ngozi</h6>
               <p className="font-normal text-base mt-2">Provost</p>
             </div>
           </div>
