@@ -98,7 +98,7 @@ function Header() {
                         setOpen((prev) => !prev);
                         setMenu(false);
                       }}
-                      to="/"
+                      to="/excos"
                     >
                       Excos / Leadership
                     </NavLink>
@@ -151,7 +151,7 @@ function Header() {
                       onClick={() => {
                         setMenu(false);
                       }}
-                      to="/"
+                      to="/excos"
                     >
                       Excos / Leadership
                     </NavLink>

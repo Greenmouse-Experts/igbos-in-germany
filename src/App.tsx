@@ -5,6 +5,7 @@ import History from "./pages/History";
 import Aims from "./pages/Aims";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import Excos from "./pages/Excos";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path:"/excos",
+        element:<Excos/>
       }
     
     ],
