@@ -34,7 +34,7 @@ function Event() {
             </p>
 
             <div className=" ml-auto mt-3 text-right">
-              <NavLink to="/about" className=" text-colorPrimary font-medium ">
+              <NavLink to="/history" className=" text-colorPrimary font-medium ">
                 Read More
               </NavLink>
             </div>
@@ -67,7 +67,7 @@ function Event() {
             </p>
 
             <div className=" ml-auto mt-3 text-right">
-              <NavLink to="/about" className=" text-colorPrimary  font-medium ">
+              <NavLink to="/history" className=" text-colorPrimary  font-medium ">
                 Read More
               </NavLink>
             </div>
