@@ -171,9 +171,9 @@ function Header() {
                 <NavLink
                     onClick={() => setMenu(false)}
                     className="lg:text-[1.05rem] text-lg w-full "
-                    to="/programs"
+                    to="/events"
                   >
-                    Programs
+                    Events / Programs
                   </NavLink>
                  
                 </li>

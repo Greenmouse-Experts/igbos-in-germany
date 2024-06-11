@@ -6,7 +6,7 @@ import { IoLocationOutline } from "react-icons/io5";
 function Event() {
   return (
     <>
-      <Banner page="Upcoming Events" img="/img/event-banner.png" />
+      <Banner page="Events / Programs" img="/img/event-banner.png" />
       <section className=" grid lg:grid-cols-3  grid-cols-1 gap-x-20">
         <div className="event-shadow">
           <img src="/img/event-1.png" alt="" />
