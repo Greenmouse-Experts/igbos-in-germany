@@ -10,6 +10,7 @@ import Partners from "./pages/Partners";
 import Programs from "./pages/Programs";
 import Event from "./pages/Event";
 import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 
 const router = createBrowserRouter([
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
   {
     path: "/signin",
     element: <SignIn />,
+  },
+  {
+    path: "/signup",
+    element: <SignUp />,
   },
 ]);
 
