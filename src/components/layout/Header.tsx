@@ -303,7 +303,7 @@ function Header() {
             </nav>
             <div>
               <NavLink
-                to="#"
+                to="/signin"
                 className="text-white bg-colorPrimary rounded-xl py-3 px-8 text-nowrap btn btn-green"
               >
                 Sign In

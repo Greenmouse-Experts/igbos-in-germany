@@ -9,6 +9,8 @@ import Excos from "./pages/Excos";
 import Partners from "./pages/Partners";
 import Programs from "./pages/Programs";
 import Event from "./pages/Event";
+import SignIn from "./pages/SignIn";
+
 
 const router = createBrowserRouter([
   {
@@ -35,23 +37,26 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path:"/excos",
-        element:<Excos/>
+        path: "/excos",
+        element: <Excos />,
       },
       {
         path: "/partners",
         element: <Partners />,
       },
       {
-        path:"/Programs",
-        element:<Programs/>
+        path: "/Programs",
+        element: <Programs />,
       },
       {
-        path:"/events",
-        element:<Event/>
-      }
-    
+        path: "/events",
+        element: <Event />,
+      },
     ],
+  },
+  {
+    path: "/signin",
+    element: <SignIn />,
   },
 ]);
 
