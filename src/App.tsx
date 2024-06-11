@@ -12,6 +12,7 @@ import Event from "./pages/Event";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Privacy from "./pages/PrivacyPolicy";
+import ForgotPassword from "./pages/ForgotPassword";
 
 
 const router = createBrowserRouter([
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <SignUp />,
   },
+  {
+    path: "/forgot-password",
+    element: <ForgotPassword />,
+  }
 ]);
 
 function App() {

@@ -12,8 +12,8 @@ interface FormData extends FieldValues {
 }
 
 function SignInForm() {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(!open);
+
+ 
 
   const [showPassword, setShowPassword] = useState(false);
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -103,12 +103,12 @@ function SignInForm() {
 
               <p className="text-grey-800 text-lg font-normal mt-2 ">
                 Forgot Password?{" "}
-                <span
-                  className="text-bluePrimary font-semibold pb-1 cursor-pointer"
-                  onClick={() => handleOpen()}
+                <NavLink to="/forgot-password"
+                  className="text-blue-700 underline !font-bold pb-1 cursor-pointer"
+                
                 >
                   Click here
-                </span>
+                </NavLink>
               </p>
               <div className="flex gap-2">
                 <input type="checkbox" name="" id="check" className="w-5 h-5" />
@@ -127,15 +127,15 @@ function SignInForm() {
             <p className="text-grey-800 text-lg font-normal mb-3 text-center mt-3">
               Need an account?{" "}
               <span className="text-blue-700 underline !font-bold pb-1">
-                <NavLink to="/signup">Create one</NavLink>
+                <NavLink to="/signup" className="text-blue-700 underline !font-bold pb-1">Create one</NavLink>
               </span>
             </p>
           </div>
         </form>
       </div>
 
-      <div className="hidden xl:block">
-        <img src="/img/login-img.svg" alt="" className="object-cover object-center" />
+      <div className="hidden xl:block h-full">
+        <img src="/img/login-img.svg" alt="" className="object-cover object-center h-full" />
       </div>
     </section>
   );

@@ -152,7 +152,7 @@ function SignUpForm() {
               <label htmlFor="checkbox" className="text-[#232323] font-normal">
                 I agree to{" "}
                 <span className="text-blue-700 underline">
-                  <NavLink to="/terms-conditions">Terms and Conditions</NavLink>
+                 Terms and Conditions
                 </span>
               </label>
             </div>
@@ -170,15 +170,15 @@ function SignUpForm() {
             <p className="text-grey-800 text-lg font-normal mb-3 text-center mt-3">
             Already have an account? {" "}
               <span className="text-blue-700 underline !font-bold pb-1">
-                <NavLink to="/signin">Sign in</NavLink>
+                <NavLink to="/signin" className="text-blue-700 underline !font-bold pb-1">Sign in</NavLink>
               </span>
             </p>
           </div>
         </form>
       </div>
 
-      <div className="hidden xl:block">
-        <img src="/img/signup-img.svg" alt="" className=" object-cover object-center"/>
+      <div className="hidden xl:block h-full">
+        <img src="/img/signup-img.svg" alt="" className=" object-cover object-center h-full"/>
       </div>
     </section>
   );
