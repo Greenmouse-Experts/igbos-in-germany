@@ -4,7 +4,7 @@ import BtnWhite from "../components/Buttons/BtnWhite";
 function Privacy() {
   return (
     <>
-      <Banner page="Privacy" img="/img/Privacy-banner.png" />
+      <Banner page="Privacy" img="/img/Policy-banner.png" />
       <section className=" ">
         <div className=" w-full">
           <h4 className=" font-semibold font-syne text-black">

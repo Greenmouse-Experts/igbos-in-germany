@@ -25,25 +25,25 @@ function Footer() {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="#">About Us</NavLink>
+              <NavLink to="/history">About Us</NavLink>
             </li>
             <li>
-              <NavLink to="#">Programs</NavLink>
+              <NavLink to="/partners">Partners</NavLink>
             </li>
             <li>
-              <NavLink to="#">Events</NavLink>
+              <NavLink to="/events">Events</NavLink>
             </li>
             <li>
-              <NavLink to="#">Media</NavLink>
+              <NavLink to="/gallery">Media</NavLink>
             </li>
             <li>
-              <NavLink to="#">Constitution</NavLink>
+              <NavLink to="/excos">Leadership</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/privacy-policy">Privacy Policies</NavLink>
-            </li>
+            </li> */}
             <li>
-              <NavLink to="#">Become A Member</NavLink>
+              <NavLink to="/signup">Become A Member</NavLink>
             </li>
           </nav>
         </div>
