@@ -195,6 +195,9 @@ a{
 .about-shadow{
   box-shadow: 0px 18px 46.3px 0px #00000008;
 }
+.event-shadow{
+  box-shadow: 0px 4px 38px 0px #C9C9C940;
+}
 
 .form-shadow{
   box-shadow: 0px 4px 72.6px 0px #00000014;

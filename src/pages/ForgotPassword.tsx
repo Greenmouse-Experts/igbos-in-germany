@@ -4,7 +4,6 @@ import { Input } from "@material-tailwind/react";
 
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 
-import { NavLink } from "react-router-dom";
 
 interface FormData extends FieldValues {
   email: string;
