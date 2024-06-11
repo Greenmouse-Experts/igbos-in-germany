@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AiOutlineAim } from "react-icons/ai";
-import { CgNotes } from "react-icons/cg";
+
 import { FiPhone } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiOutlinePhoto } from "react-icons/hi2";
-import { LiaUsersSolid } from "react-icons/lia";
+
 import { MdKeyboardArrowDown, MdOutlineEmail,  } from "react-icons/md";
 import { PiClockCounterClockwiseBold } from "react-icons/pi";
 import { RiCalendarEventLine, RiTeamLine } from "react-icons/ri";
