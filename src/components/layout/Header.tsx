@@ -120,32 +120,7 @@ function Header() {
                       </span>
                       Excos / Leadership
                     </NavLink>
-                    <NavLink
-                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center group text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
-                      onClick={() => {
-                        setOpen((prev) => !prev);
-                        setMenu(false);
-                      }}
-                      to="#"
-                    >
-                       <span>
-                        <CgNotes size={25}  className="text-colorPrimary group-hover:text-white" />
-                      </span>
-                      Our Constitution
-                    </NavLink>
-                    <NavLink
-                      className=" py-3 px-2 w-full flex items-center  gap-4 text-center group text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
-                      onClick={() => {
-                        setOpen((prev) => !prev);
-                        setMenu(false);
-                      }}
-                      to="#"
-                    >
-                       <span>
-                        <LiaUsersSolid size={25}  className="text-colorPrimary group-hover:text-white" />
-                      </span>
-                      How to be a Member
-                    </NavLink>
+                   
                   </div>
                   <div
                     className={` py-1  -left-14 xl:hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all ${
@@ -179,24 +154,7 @@ function Header() {
                     >
                       Excos / Leadership
                     </NavLink>
-                    <NavLink
-                      className=" py-3 px-1 w-full flex items-center gap-4 text-center text-bluePrimary text-lg font-medium text-nowrap"
-                      onClick={() => {
-                        setMenu(false);
-                      }}
-                      to="#"
-                    >
-                      Our Constitution
-                    </NavLink>
-                    <NavLink
-                      className=" py-3 px-1 w-full flex items-center gap-4 text-center text-bluePrimary text-lg font-medium text-nowrap"
-                      onClick={() => {
-                        setMenu(false);
-                      }}
-                      to="#"
-                    >
-                      How to be a Member
-                    </NavLink>
+                   
                   </div>
                 </li>
 

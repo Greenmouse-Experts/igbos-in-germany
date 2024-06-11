@@ -11,6 +11,7 @@ import Programs from "./pages/Programs";
 import Event from "./pages/Event";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import Privacy from "./pages/PrivacyPolicy";
 
 
 const router = createBrowserRouter([
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
         path: "/events",
         element: <Event />,
       },
+      {
+        path: "/privacy-policy",
+        element: <Privacy />,
+      }
     ],
   },
   {

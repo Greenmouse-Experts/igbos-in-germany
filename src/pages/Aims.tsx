@@ -17,7 +17,7 @@ function Aims() {
           />
         </div>
         <div className="lg:w-[50%] w-full">
-          <p className="text-colorPrimary font-semibold">ABOUT US</p>
+        
           <h4 className=" font-semibold font-syne text-black">
           Aims and Objectives.
           </h4>
