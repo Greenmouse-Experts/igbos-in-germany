@@ -11,7 +11,7 @@ function History() {
         <div className="flex lg:flex-row flex-col items-center lg:gap-32 gap-10">
           <div className="lg:w-[40%] w-full">
             <img
-              src="/img/history-img.png"
+              src="/img/gallery-2.png"
               alt=""
               className="w-full object-cover rounded-[10px]"
             />
