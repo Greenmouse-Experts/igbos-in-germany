@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import BtnWhite from "../Buttons/BtnWhite";
+import BaseButton from "../Buttons/BaseButton";
 
 function Clients() {
   const [sliderRef, setSliderRef] = useState<Slider | null>(null);
@@ -115,7 +116,9 @@ function Clients() {
             </div>
           </Slider>
         </div>
-        <div className="flex items-center mt-20 flex-wrap justify-between"></div>
+        <div className="flex items-center mt-10 justify-center w-full">
+          <BaseButton color="green" link="/partners" text="View all Partners"/>
+        </div>
       </section>
 
       <section className=" bg-[url('/img/igbo-attire.png')] flex flex-col items-center text-white text-center mt-28">
@@ -130,6 +133,7 @@ function Clients() {
         </p>
         <BtnWhite color="green" />
       </section>
+
     </>
   );
 }

@@ -151,7 +151,7 @@ function SignUpForm() {
               />
               <label htmlFor="checkbox" className="text-[#232323] font-normal">
                 I agree to{" "}
-                <span className="text-blue-700 underline">
+                <span className=" font-semibold">
                  Terms and Conditions
                 </span>
               </label>

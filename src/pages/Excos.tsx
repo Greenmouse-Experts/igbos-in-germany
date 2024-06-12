@@ -12,9 +12,10 @@ function Excos() {
             alt=""
             className=" "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
+          <div className="bg-colorPrimary  px-12 py-4 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
               <h6 className="text-xl font-semibold ">High Chief Uzoma Benjamin </h6>
+              <p className="text-base text-center">(Agbawodike-Izu)</p>
               <p className="font-normal text-base mt-2">Coordinator NIG</p>
             </div>
           </div>
@@ -25,7 +26,7 @@ function Excos() {
             alt=""
             className=" "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
               <h6 className="text-xl font-semibold ">Mr. J. Maurice Ifeanyi Ezeani</h6>
               <p className="font-normal text-base mt-2">Deputy Coordinator</p>
@@ -38,7 +39,7 @@ function Excos() {
             alt=""
             className=" "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
               <h6 className="text-xl font-semibold ">Uche Michael Onwuemenyi.</h6>
               <p className="font-normal text-base mt-2">PRO</p>
@@ -51,7 +52,7 @@ function Excos() {
             alt=""
             className=" "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
               <h6 className="text-xl font-semibold ">Hon. Kingsley Onwubiko</h6>
               <p className="font-normal text-base mt-2">Treasury NIG</p>
@@ -64,7 +65,7 @@ function Excos() {
             alt=""
             className=" "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
               <h6 className="text-xl font-semibold ">Chinasa Obimdi </h6>
               <p className="font-normal text-base mt-2">Financial secretary</p>
@@ -77,7 +78,7 @@ function Excos() {
             alt=""
             className=" "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
               <h6 className="text-xl font-semibold ">Joseph Chinasa Ezeji</h6>
               <p className="font-normal text-base mt-2">Secretary</p>
@@ -90,7 +91,7 @@ function Excos() {
             alt=""
             className=" "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
               <h6 className="text-xl font-semibold ">High Chief Obyzed Obinnaya</h6>
               <p className="font-normal text-base mt-2">Social Secretary</p>
@@ -103,7 +104,7 @@ function Excos() {
             alt=""
             className=" "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-between w-full">
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
               <h6 className="text-xl font-semibold ">Mrs Martha Ngozi</h6>
               <p className="font-normal text-base mt-2">Provost</p>

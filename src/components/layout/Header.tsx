@@ -3,22 +3,21 @@ import { AiOutlineAim } from "react-icons/ai";
 
 import { FiPhone } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { HiOutlinePhoto } from "react-icons/hi2";
 
-import { MdKeyboardArrowDown, MdOutlineEmail,  } from "react-icons/md";
+import { MdKeyboardArrowDown, MdOutlineEmail } from "react-icons/md";
 import { PiClockCounterClockwiseBold } from "react-icons/pi";
-import { RiCalendarEventLine, RiTeamLine } from "react-icons/ri";
+import { RiTeamLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 
 function Header() {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
-  const [open2, setOpen2] = useState(false);
-  const [open3, setOpen3] = useState(false);
+  // const [open2, setOpen2] = useState(false);
+  // const [open3, setOpen3] = useState(false);
   // const [open4, setOpen4] = useState(false);
   const [menu, setMenu] = useState(false);
 
-  console.log(open1, open2, menu);
+  console.log(open1, menu);
   return (
     <header className=" bg-colorPrimary pt-4  w-full relative text-lg font-montserrat">
       <div className=" bg-white h-[8rem] ">
@@ -43,7 +42,7 @@ function Header() {
             info@ndiigbogermany.org
           </NavLink>
         </div>
-        <div className="flex 2xl:px-[7%] px-[2%]  justify-between  items-center md:pt-7 pt-0 font-medium">
+        <div className="flex 2xl:px-[7%] px-[1%]  justify-between  items-center md:pt-7 pt-0 font-medium">
           <NavLink to="/" className=" lg:scale-75 scale-50 lg:ml-0 -ml-16 ">
             <img src="/logo.svg" alt="logo" />
           </NavLink>
@@ -53,7 +52,7 @@ function Header() {
             } left-0 unset transition-all`}
           >
             <nav className="w-full scroll lg:text-[1.05rem] !text-lg  font-medium ">
-              <ul className="md:flex xl:flex-row flex-col xl:gap-14 xl:items-center items-start xl:pt-0 xl:pl-0  sm:pl-20 pl-10 pt-3  gap-5 ">
+              <ul className="md:flex xl:flex-row flex-col xl:gap-14  xl:items-center items-start xl:pt-0 xl:pl-0  sm:pl-20 pl-10 pt-3  gap-5 ">
                 <li className="">
                   <NavLink
                     onClick={() => setMenu(false)}
@@ -90,7 +89,10 @@ function Header() {
                       to="/history"
                     >
                       <span>
-                        <PiClockCounterClockwiseBold size={25}  className="text-colorPrimary group-hover:text-white" />
+                        <PiClockCounterClockwiseBold
+                          size={25}
+                          className="text-colorPrimary group-hover:text-white"
+                        />
                       </span>
                       Our History
                     </NavLink>
@@ -102,8 +104,11 @@ function Header() {
                       }}
                       to="/objective"
                     >
-                       <span>
-                        <AiOutlineAim size={25}  className="text-colorPrimary group-hover:text-white" />
+                      <span>
+                        <AiOutlineAim
+                          size={25}
+                          className="text-colorPrimary group-hover:text-white"
+                        />
                       </span>
                       Aims and Objectives
                     </NavLink>
@@ -115,12 +120,14 @@ function Header() {
                       }}
                       to="/excos"
                     >
-                       <span>
-                        <RiTeamLine size={25}  className="text-colorPrimary group-hover:text-white" />
+                      <span>
+                        <RiTeamLine
+                          size={25}
+                          className="text-colorPrimary group-hover:text-white"
+                        />
                       </span>
                       Excos / Leadership
                     </NavLink>
-                   
                   </div>
                   <div
                     className={` py-1  -left-14 xl:hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all ${
@@ -154,7 +161,6 @@ function Header() {
                     >
                       Excos / Leadership
                     </NavLink>
-                   
                   </div>
                 </li>
 
@@ -167,85 +173,23 @@ function Header() {
                     Partners
                   </NavLink>
                 </li>
-                <li className="relative" onMouseLeave={() => setOpen2(false)}>
-                <NavLink
+                <li className="relative">
+                  <NavLink
                     onClick={() => setMenu(false)}
-                    className="lg:text-[1.05rem] text-lg w-full "
+                    className="lg:text-[1.05rem] text-lg w-full text-nowrap "
                     to="/events"
                   >
                     Events / Programs
                   </NavLink>
-                 
                 </li>
-                <li className="relative" onMouseLeave={() => setOpen3(false)}>
-                  <p
-                    className="lg:text-[1.05rem] text-lg  py-2  cursor-pointer flex items-center gap-2"
-                    onMouseEnter={() => setOpen3(true)}
+                <li className="relative">
+                  <NavLink
+                    onClick={() => setMenu(false)}
+                    className="lg:text-[1.05rem] text-lg w-full "
+                    to="/gallery"
                   >
-                    Resources{" "}
-                    <span>
-                      <MdKeyboardArrowDown />
-                    </span>
-                  </p>
-                  <div
-                    className={` py-3 absolute w-[15rem] -left-14 xl:flex hidden flex-col justify-center items-center z-50 bg-white rounded-2xl p-5 transition-all  ${
-                      open3 ? "top-10" : "-top-[30rem]"
-                    }`}
-                  >
-                    <NavLink
-                      className=" py-3 px-2 w-full flex  items-center gap-4 text-center group text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
-                      onClick={() => {
-                        setOpen3((prev) => !prev);
-                        setMenu(false);
-                      }}
-                      to="/gallery"
-                    >
-                         <span>
-                        <HiOutlinePhoto size={25}  className="text-colorPrimary group-hover:text-white" />
-                      </span>
-                      Gallery
-                    </NavLink>
-                    <NavLink
-                      className=" py-3 px-2 w-full flex items-center   gap-4 text-center group text-lg text-nowrap hover:bg-colorPrimary hover:text-white hover:scale-[.98] transition-all duration-300"
-                      onClick={() => {
-                        setOpen3((prev) => !prev);
-                        setMenu(false);
-                      }}
-                      to="/events"
-                    >
-                        <span>
-                        <RiCalendarEventLine size={25}  className="text-colorPrimary group-hover:text-white" />
-                      </span>
-                      Events
-                    </NavLink>
-                  </div>
-                  <div
-                    className={` py-1  -left-14 xl:hidden flex-col justify-center items-center z-5  rounded-2xl p-5 transition-all ${
-                      open3 ? "flex" : "hidden"
-                    }`}
-                  >
-                    <NavLink
-                      className=" py-3 px-1 w-full flex items-center gap-4 text-center text-bluePrimary text-lg font-medium text-nowrap"
-                      onClick={() => {
-                        setOpen3((prev) => !prev);
-                        setMenu(false);
-                      }}
-                      to="/gallery"
-                    >
-                      Gallery
-                    </NavLink>
-
-                    <NavLink
-                      className=" py-3 px-1 w-full flex items-center gap-4 text-center text-bluePrimary text-lg font-medium text-nowrap"
-                      onClick={() => {
-                        setOpen3((prev) => !prev);
-                        setMenu(false);
-                      }}
-                      to="/forms"
-                    >
-                      Events
-                    </NavLink>
-                  </div>
+                    Gallery
+                  </NavLink>
                 </li>
 
                 <li>
@@ -262,9 +206,9 @@ function Header() {
             <div>
               <NavLink
                 to="/signin"
-                className="text-white bg-colorPrimary rounded-xl py-3 px-8 text-nowrap btn btn-green"
+                className="text-white bg-colorPrimary rounded-xl py-3 px-8 text-nowrap btn btn-green 2xl:text-lg text-sm"
               >
-                Sign In
+                Membership Sign In
               </NavLink>
             </div>
           </div>
