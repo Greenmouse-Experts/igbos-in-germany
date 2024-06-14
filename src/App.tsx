@@ -13,6 +13,8 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Privacy from "./pages/PrivacyPolicy";
 import ForgotPassword from "./pages/ForgotPassword";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Toaster } from "react-hot-toast";
 
 
 const router = createBrowserRouter([
@@ -76,7 +78,38 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        // staleTime: 60 * 1000,
+        staleTime: 0,
+      },
+    },
+  });
+  return(
+    <>
+       <QueryClientProvider client={queryClient}>
+     <RouterProvider router={router} />
+     <Toaster
+          position="top-center"
+          gutter={12}
+          containerStyle={{ margin: "8px", top: 100 }}
+          toastOptions={{
+            success: { duration: 3000 },
+            error: { duration: 3000 },
+            style: {
+              fontSize: "16px",
+              maxWidth: "500px",
+              padding: "16px 24px",
+              backgroundColor: "#fff",
+              color: "#374151",
+              zIndex: 9999999999,
+            },
+          }}
+        />
+     </QueryClientProvider>
+    </>
+  );
 }
 
 export default App;

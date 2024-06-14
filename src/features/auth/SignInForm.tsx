@@ -5,6 +5,10 @@ import { useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 import { NavLink } from "react-router-dom";
+import { useLogin } from "./useLogin";
+import SpinnerMini from "../../components/SpinnerMini";
+import AuthButton from "./AuthButton";
+import toast from "react-hot-toast";
 
 interface FormData extends FieldValues {
   email: string;
@@ -18,7 +22,11 @@ function SignInForm() {
   const [showPassword, setShowPassword] = useState(false);
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
-  const {  handleSubmit } = useForm({});
+  
+  const { register, handleSubmit, formState } = useForm({});
+  const { errors } = formState;
+  console.log(errors)
+
   // const {  } = formState;
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -29,24 +37,20 @@ function SignInForm() {
     },
   });
 
-  // const { login, isLoading } = useLogin();
+  const { login, isLoading } = useLogin();
   // const dispatch = useDispatch();
 
-  const onSubmit: SubmitHandler<FieldValues> = () => {
-    // login(
-    //   { email, password },
-    //   {
-    //     onSuccess(data) {
-    //       dispatch(saveUser(data.data));
-    //       dispatch(setToken(data.token));
-    //       localStorage.setItem("token", data.token);
-    //       dispatch(setIsLoggedIn());
-    //       sessionStorage.setItem("lte_token", data.token);
-    //       // dispatch(loginUser())
-    //     },
-    //   }
-    // );
+  const onSubmit: SubmitHandler<FieldValues> = ({password, email}) => {
+    const formData = new FormData();
+    formData.append("login_details", email);
+    formData.append("password", password);
+    toast.error(`Cross-Origin Request Blocked`);
+    login(
+      { login_details:email, password },
+  
+    );
   };
+  
   return (
     <section className="px-0 py-0 grid xl:grid-cols-2 grid-cols-1">
       <div>
@@ -69,25 +73,33 @@ function SignInForm() {
              <div className="mb-4">
              <Input
                 color="#015907"
-                label="Email"
+                label="Username"
+                type="text"
+                disabled={isLoading}
                 className="!h-[4rem] focus:!border-colorPrimary !rounded-[10px] border-[#D9D9D9] text-lg   "
                 labelProps={{
                   className: " text-lg focus:after:!border-colorPrimary border-colorPrimary ",
                   style: { color: '#9A9A9A',  },
                 }}
-              
+                {...register("email", { required: "username is required" })}
+                error={!!errors.email}
               />
              </div>
               <div className="relative w-full">
                 <Input
                   color="#015907"
                   label="Password"
+                  disabled={isLoading}
                   type={showPassword ? "text" : "password"}
                   className="!h-[4rem]  focus:border-colorPrimary !rounded-[10px] border-[#D9D9D9] text-lg   "
                   labelProps={{
                     className: " text-lg focus:after:!border-colorPrimary border-colorPrimary ",
                     style: { color: '#9A9A9A',  },
                   }}
+                  {...register("password", {
+                    required: "Password is required",
+                  })}
+                  error={!!errors.password}
                 />
                 <span
                   className="absolute right-3 top-4 cursor-pointer"
@@ -114,9 +126,9 @@ function SignInForm() {
                 <input type="checkbox" name="" id="check" className="w-5 h-5" />
                 <label htmlFor="check">Keep me logged in</label>
               </div>
-              <button className="btn-green btn bg-colorPrimary py-4 rounded-[10px] text-white font-semibold">
-                Sign in
-              </button>
+              <AuthButton type="submit" disabled={isLoading} >
+              {!isLoading ? "Sign in" : <SpinnerMini />}
+              </AuthButton>
               <div className="w-full flex justify-center items-center">
                 <span className="bg-grey-400 h-[1.5px] block w-full"></span>
                 <span className="mx-2 text-grey-700">or</span>

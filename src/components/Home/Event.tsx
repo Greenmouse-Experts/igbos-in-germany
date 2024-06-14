@@ -22,7 +22,7 @@ function Event() {
               around the world.
             </p>
             <NavLink
-              to="#"
+              to="/signin"
               className=" text-colorPrimary underline flex items-center "
             >
               Register Now{" "}
