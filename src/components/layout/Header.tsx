@@ -205,7 +205,7 @@ function Header() {
             </nav>
             <div>
               <NavLink
-                to="/signin"
+                to="https://portal.ndiigbogermany.org/login"
                 className="text-white bg-colorPrimary rounded-xl py-3 px-8 text-nowrap btn btn-green 2xl:text-lg text-sm"
               >
                 Membership Sign In

@@ -43,18 +43,26 @@ function Footer() {
               <NavLink to="/privacy-policy">Privacy Policies</NavLink>
             </li> */}
             <li>
-              <NavLink to="/signup">Become A Member</NavLink>
+              <NavLink to="https://portal.ndiigbogermany.org/login">
+                Become A Member
+              </NavLink>
             </li>
           </nav>
         </div>
         <div className="w-[60%] h-[1.1px] bg-[#ACACAC] mx-auto"></div>
         <div className="flex justify-center items-center px-10 text-[#ACACAC]  mt-8">
-          <p>Ndi-Igbo Germany is an umbrella body for all Igbo unions in Germany.<br/> All Igbo unions in Germany are members of Ndi-Igbo Germany (NIG)</p>
+          <p>
+            Ndi-Igbo Germany is an umbrella body for all Igbo unions in Germany.
+            <br /> All Igbo unions in Germany are members of Ndi-Igbo Germany
+            (NIG)
+          </p>
         </div>
         <div className="flex justify-center items-center px-10 text-colorPrimary  mt-5">
           <p>Copyright © 2024 .Ndi-Igbo Germany | All Rights Reserved</p>
         </div>
-        <p className="text-sm text-[#ACACAC] text-center mt-1">Site Credit to:</p>
+        <p className="text-sm text-[#ACACAC] text-center mt-1">
+          Site Credit to:
+        </p>
       </div>
     </footer>
   );

@@ -1,4 +1,3 @@
-
 import { MdArrowOutward } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
@@ -22,7 +21,7 @@ function Event() {
               around the world.
             </p>
             <NavLink
-              to="/signin"
+              to="https://portal.ndiigbogermany.org/login"
               className=" text-colorPrimary underline flex items-center "
             >
               Register Now{" "}
@@ -39,14 +38,30 @@ function Event() {
             Subscribe For Our Membership Update
           </h6>
           <div className="flex flex-col gap-3 mt-10">
-            <input className="bg-[#F4F4F4] px-4 h-[4rem]" type="text" placeholder="First Name" />
-            <input className="bg-[#F4F4F4] px-4 h-[4rem]" type="text"  placeholder="Last Name"/>
-            <input className="bg-[#F4F4F4] px-4 h-[4rem]" type="text" placeholder="Phone Number"/>
-            <input className="bg-[#F4F4F4] px-4 h-[4rem]" type="text" placeholder="Email" />
+            <input
+              className="bg-[#F4F4F4] px-4 h-[4rem]"
+              type="text"
+              placeholder="First Name"
+            />
+            <input
+              className="bg-[#F4F4F4] px-4 h-[4rem]"
+              type="text"
+              placeholder="Last Name"
+            />
+            <input
+              className="bg-[#F4F4F4] px-4 h-[4rem]"
+              type="text"
+              placeholder="Phone Number"
+            />
+            <input
+              className="bg-[#F4F4F4] px-4 h-[4rem]"
+              type="text"
+              placeholder="Email"
+            />
           </div>
 
           <button className=" bg-colorPrimary py-3 px-14 mt-10 font-semibold">
-          Submit
+            Submit
           </button>
         </form>
       </div>

@@ -1,12 +1,11 @@
-import SignInForm from "../features/auth/SignInForm"
+// import SignInForm from "../features/authhttps://portal.ndiigbogermany.org/loginForm";
 
+// function SignIn() {
+//   return (
+//     <main>
+//       <SignInForm />
+//     </main>
+//   );
+// }
 
-function SignIn() {
-  return (
-  <main>
-    <SignInForm/>
-  </main>
-  )
-}
-
-export default SignIn
+// export default SignIn;

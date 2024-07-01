@@ -39,7 +39,7 @@ function History() {
       </section>
 
 
-      <section className=" ">
+      <section className=" pt-0">
         <div className="flex lg:flex-row flex-col items-center lg:gap-32 gap-10">
           <div className="lg:w-[50%] w-full">
             <p className=" 2xl:mt-3 mt-3">
@@ -59,7 +59,7 @@ function History() {
           </div>
           <div className="lg:w-[40%] w-full">
             <img
-              src="/img/history-img2.png"
+              src="/img/gallery-16.png"
               alt=""
               className="w-full object-cover rounded-[10px]"
             />
@@ -67,11 +67,11 @@ function History() {
         </div>
       </section>
 
-      <section className=" ">
+      <section className="pt-0">
         <div className="flex lg:flex-row flex-col items-center lg:gap-32 gap-10">
         <div className="lg:w-[40%] w-full">
             <img
-              src="/img/history-img3.png"
+              src="/img/gallery-9.png"
               alt=""
               className="w-full object-cover rounded-[10px]"
             />

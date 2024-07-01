@@ -9,13 +9,9 @@ import Excos from "./pages/Excos";
 import Partners from "./pages/Partners";
 import Programs from "./pages/Programs";
 import Event from "./pages/Event";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
 import Privacy from "./pages/PrivacyPolicy";
-import ForgotPassword from "./pages/ForgotPassword";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
-
 
 const router = createBrowserRouter([
   {
@@ -60,21 +56,9 @@ const router = createBrowserRouter([
       {
         path: "/privacy-policy",
         element: <Privacy />,
-      }
+      },
     ],
   },
-  {
-    path: "/signin",
-    element: <SignIn />,
-  },
-  {
-    path: "/signup",
-    element: <SignUp />,
-  },
-  {
-    path: "/forgot-password",
-    element: <ForgotPassword />,
-  }
 ]);
 
 function App() {
@@ -86,11 +70,11 @@ function App() {
       },
     },
   });
-  return(
+  return (
     <>
-       <QueryClientProvider client={queryClient}>
-     <RouterProvider router={router} />
-     <Toaster
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+        <Toaster
           position="top-center"
           gutter={12}
           containerStyle={{ margin: "8px", top: 100 }}
@@ -107,7 +91,7 @@ function App() {
             },
           }}
         />
-     </QueryClientProvider>
+      </QueryClientProvider>
     </>
   );
 }

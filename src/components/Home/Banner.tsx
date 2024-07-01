@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import BtnPrimary from "../Buttons/BtnPrimary";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 function Banner() {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -16,8 +17,26 @@ function Banner() {
 
     return () => clearInterval(slideInterval);
   }, []);
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide % slideLength) + 1);
+  };
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 1 ? slideLength : prevSlide - 1
+    );
+  };
   return (
     <div className="relative">
+      <div className="w-full flex justify-between items-center absolute top-[40%]">
+          <div className=" w-12 h-12 rounded-full flex justify-center items-center cursor-pointer z-10 ml-[0%]" onClick={handlePrevSlide}>
+            <IoIosArrowBack  color="white" size={40}/>
+          </div>
+
+          <div className=" w-12 h-12 rounded-full flex justify-center items-center cursor-pointer z-10  mr-[0%]" onClick={handleNextSlide}>
+            <IoIosArrowForward  color="white" size={40}/>
+          </div>
+        </div>
       {currentSlide === 1 && (
         <section
           className={`hero-1 transition-opacity duration-500 bg-center bg-cover lg:h-[35rem] sm:h-[350px] h-[400px] 2xl:py-32 lg:py-20 lg:pt-24 sm:pt-16 pt-10 text-white relative `}

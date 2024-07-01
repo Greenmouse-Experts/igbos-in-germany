@@ -170,22 +170,22 @@ a{
 }
 
 .hero-1 {
-  background-image: url("/img/hero-1.png");
+  background-image: url("https://res.cloudinary.com/greenmouse-tech/image/upload/v1719223700/Ndi-Igbo%20Germany/hero-1_yfcbno.png");
 }
 
  .hero-2 {
-  background-image: url("/img/hero-2.png");
+  background-image: url("https://res.cloudinary.com/greenmouse-tech/image/upload/v1719223692/Ndi-Igbo%20Germany/hero-2_maloqg.png");
 }
 
 .hero-3 {
-  background-image: url("/img/hero-3.png");
+  background-image: url("https://res.cloudinary.com/greenmouse-tech/image/upload/v1719223678/Ndi-Igbo%20Germany/hero-3_lh5hen.png");
 }
 
  .hero-4 {
-  background-image: url("/img/hero-4.png");
+  background-image: url("https://res.cloudinary.com/greenmouse-tech/image/upload/v1719223694/Ndi-Igbo%20Germany/hero-4_wd4juy.png");
 }
  .hero-5 {
-  background-image: url("/img/hero-5.png");
+  background-image: url("https://res.cloudinary.com/greenmouse-tech/image/upload/v1719223701/Ndi-Igbo%20Germany/hero-5_yffucs.png");
 }
 
 .card-shadow{

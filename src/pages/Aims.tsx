@@ -11,7 +11,7 @@ function Aims() {
       <div className="flex lg:flex-row flex-col items-center lg:gap-32 gap-10">
         <div className="lg:w-[40%] w-full">
           <img
-            src="/img/gallery-8.png"
+            src="/img/gallery-1.png"
             alt=""
             className="w-full object-cover rounded-[10px]"
           />

@@ -8,13 +8,13 @@ function Excos() {
       <section className=" grid grid-cols-[repeat(auto-fill,_minmax(25rem,_1fr))] gap-12">
         <div className=" flex flex-col justify-center">
           <img
-            src="/img/excos-1.png"
+            src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719657233/Ndi-Igbo%20Germany/excos-1_mrjtyw.png"
             alt=""
-            className=" "
+            className="h-[420px] object-cover object-center "
           />
           <div className="bg-colorPrimary  px-12 py-4 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
-              <h6 className="text-xl font-semibold ">High Chief Uzoma Benjamin </h6>
+              <h6 className="text-xl font-semibold">Chief Uzoma Benjamin Chinaka </h6>
               <p className="text-base text-center">(Agbawodike-Izu)</p>
               <p className="font-normal text-base mt-2">Coordinator NIG</p>
             </div>
@@ -22,9 +22,9 @@ function Excos() {
         </div>
         <div className=" flex flex-col justify-center">
           <img
-            src="/img/excos-2.png"
+            src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719224826/Ndi-Igbo%20Germany/excos-2_avt8pz.png"
             alt=""
-            className=" "
+            className="h-[420px] object-cover object-center "
           />
           <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
@@ -35,9 +35,9 @@ function Excos() {
         </div>
         <div className=" flex flex-col justify-center">
           <img
-            src="/img/excos-3.png"
+            src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719224831/Ndi-Igbo%20Germany/excos-3_h1tmmt.png"
             alt=""
-            className=" "
+            className="h-[420px] object-cover object-center "
           />
           <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
@@ -48,9 +48,9 @@ function Excos() {
         </div>
         <div className=" flex flex-col justify-center">
           <img
-            src="/img/excos-4.png"
+            src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719224824/Ndi-Igbo%20Germany/excos-4_xki0w2.png"
             alt=""
-            className=" "
+            className="h-[420px] object-cover object-center "
           />
           <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
@@ -61,9 +61,9 @@ function Excos() {
         </div>
         <div className=" flex flex-col justify-center">
           <img
-            src="/img/excos-5.png"
+            src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719224826/Ndi-Igbo%20Germany/excos-5_oqzodn.png"
             alt=""
-            className=" "
+            className="h-[420px] object-cover object-center "
           />
           <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
@@ -74,9 +74,9 @@ function Excos() {
         </div>
         <div className=" flex flex-col justify-center">
           <img
-            src="/img/excos-6.png"
+            src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719224827/Ndi-Igbo%20Germany/excos-6_bvzmbb.png"
             alt=""
-            className=" "
+            className="h-[420px] object-cover object-center "
           />
           <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
@@ -87,9 +87,9 @@ function Excos() {
         </div>
         <div className=" flex flex-col justify-center">
           <img
-            src="/img/excos-7.png"
+            src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719224839/Ndi-Igbo%20Germany/excos-7_v0058o.png"
             alt=""
-            className=" "
+            className="h-[420px] object-cover object-center "
           />
           <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
@@ -100,14 +100,27 @@ function Excos() {
         </div>
         <div className=" flex flex-col justify-center">
           <img
-            src="/img/excos-8.png"
+            src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719224836/Ndi-Igbo%20Germany/excos-8_guligu.png"
             alt=""
-            className=" "
+            className="h-[420px] object-cover object-center "
           />
           <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
             <div>
               <h6 className="text-xl font-semibold ">Mrs Martha Ngozi</h6>
               <p className="font-normal text-base mt-2">Provost</p>
+            </div>
+          </div>
+        </div>
+        <div className=" flex flex-col justify-center">
+          <img
+            src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719656426/Ndi-Igbo%20Germany/excos-9_d2x0hn.png"
+            alt=""
+            className="h-[420px] object-cover object-center "
+          />
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
+            <div>
+              <h6 className="text-xl font-semibold ">Nze Ezeanochie Nnamdi</h6>
+              <p className="font-normal text-base mt-2">Ass Sec NIG</p>
             </div>
           </div>
         </div>
