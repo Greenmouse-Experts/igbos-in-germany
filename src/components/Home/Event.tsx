@@ -32,8 +32,11 @@ function Event() {
           </div>
         </div>
       </div>
-      <div className="lg:w-[40%] w-full">
-        <form className=" bg-white p-5">
+      <div className="lg:w-[40%] w-full border border-white rounded-md p-5  bg-white">
+        <img src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719844228/Ndi-Igbo%20Germany/advert_vu1c29.jpg" alt="ads" className="w-full h-72 object-contain" />
+        <h4 className=" capitalize text-center mt-4 text-black">Advert goes Here</h4>
+
+        {/* <form className=" bg-white p-5">
           <h6 className="text-xl font-semibold text-[#111111]">
             Subscribe For Our Membership Update
           </h6>
@@ -63,7 +66,7 @@ function Event() {
           <button className=" bg-colorPrimary py-3 px-14 mt-10 font-semibold">
             Submit
           </button>
-        </form>
+        </form> */}
       </div>
     </section>
   );

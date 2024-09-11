@@ -29,7 +29,12 @@ function Contact() {
     message: "",
   };
 
-  const { control, handleSubmit, formState: { errors }, reset } = useForm<ContactForm>({
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<ContactForm>({
     defaultValues: initialValues,
   });
 
@@ -67,7 +72,11 @@ function Contact() {
         <div className="flex lg:flex-row flex-col gap-10 items-center">
           <div className="bg-white card-shadow dark:bg-bluePrimary dark:text-white shadow-lg rounded-md p-5 py-8 flex flex-col items-center text-center lg:w-[33%] w-full">
             <div className="bg-colorPrimary p-4 rounded-full w-fit scale-90">
-              <img src="/icons/contact-1.svg" alt="location" className="scale-90" />
+              <img
+                src="/icons/contact-1.svg"
+                alt="location"
+                className="scale-90"
+              />
             </div>
             <div className="flex flex-col gap-3 mt-3">
               <h4 className="text-xl font-semibold">Address</h4>
@@ -76,7 +85,11 @@ function Contact() {
           </div>
           <div className="bg-white card-shadow dark:bg-bluePrimary dark:text-white shadow-lg rounded-md p-5 py-8 flex flex-col items-center text-center lg:w-[33%] w-full">
             <div className="bg-colorPrimary p-4 rounded-full w-fit scale-90">
-              <img src="/icons/contact-2.svg" alt="location" className="scale-90" />
+              <img
+                src="/icons/contact-2.svg"
+                alt="location"
+                className="scale-90"
+              />
             </div>
             <div className="flex flex-col gap-3 mt-3">
               <h4 className="text-xl font-semibold">Phone Number</h4>
@@ -85,7 +98,11 @@ function Contact() {
           </div>
           <div className="bg-white card-shadow dark:bg-bluePrimary dark:text-white shadow-lg rounded-md p-5 py-8 flex flex-col items-center text-center lg:w-[33%] w-full">
             <div className="bg-colorPrimary p-4 rounded-full w-fit scale-90">
-              <img src="/icons/contact-3.svg" alt="location" className="scale-90" />
+              <img
+                src="/icons/contact-3.svg"
+                alt="location"
+                className="scale-90"
+              />
             </div>
             <div className="flex flex-col gap-3 mt-3">
               <h4 className="text-xl font-semibold">Email Address</h4>
@@ -95,10 +112,11 @@ function Contact() {
         </div>
 
         {/* map */}
-        <div className="flex lg:flex-row gap-10 flex-col mt-32">
-          <div className="lg:w-[50%] w-full">
+        <div className="flex lg:flex-row gap-10 flex-col mt-32 ">
+          <div className=" w-full">
+          
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5533842251325!2d3.3927071!3d6.451335299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b10ec458dc1%3A0x604b6b9aca21122d!2s3%20Ajele%20St%2C%20Lagos%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1718187207386!5m2!1sen!2sng"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163720.23033943298!2d8.471752400266126!3d50.12131551693947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt%2C%20Germany!5e0!3m2!1sen!2sng!4v1719841063894!5m2!1sen!2sng"
               width="100%"
               height="500"
               style={{ border: 0 }}
@@ -182,7 +200,7 @@ function Contact() {
                 <Controller
                   name="message"
                   control={control}
-                  rules={{ required: "Message is required" }}
+                  rules={{ required: "Details is required" }}
                   render={({ field }) => (
                     <textarea
                       {...field}
@@ -207,7 +225,8 @@ function Contact() {
       </section>
       <section className="bg-colorPrimary flex flex-col justify-center items-center text-center text-white">
         <p className="text-2xl font-medium">
-          Membership is open to All official registered Igbo Unions/Associations in Germany.
+          Membership is open to All official registered Igbo Unions/Associations
+          in Germany.
         </p>
         <BtnWhite />
       </section>
@@ -217,7 +236,10 @@ function Contact() {
         <DialogBody>
           <div className="text-center text-black">
             <h3 className="text-2xl font-semibold mb-4">Success</h3>
-            <p className=" text-xl">Thank you for reaching out! Your message has been successfully sent. We will get back to you shortly.!</p>
+            <p className=" text-xl">
+              Thank you for reaching out! Your message has been successfully
+              sent. We will get back to you shortly.!
+            </p>
           </div>
         </DialogBody>
         <DialogFooter>

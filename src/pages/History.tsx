@@ -11,7 +11,7 @@ function History() {
         <div className="flex lg:flex-row flex-col items-center lg:gap-32 gap-10">
           <div className="lg:w-[40%] w-full">
             <img
-              src="/img/gallery-2.png"
+              src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719226081/Ndi-Igbo%20Germany/gallery/gallery-2_yv24pa.png"
               alt=""
               className="w-full object-cover rounded-[10px]"
             />
@@ -59,7 +59,7 @@ function History() {
           </div>
           <div className="lg:w-[40%] w-full">
             <img
-              src="/img/gallery-16.png"
+              src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719226092/Ndi-Igbo%20Germany/gallery/gallery-16_bpi7gv.png"
               alt=""
               className="w-full object-cover rounded-[10px]"
             />
@@ -71,7 +71,7 @@ function History() {
         <div className="flex lg:flex-row flex-col items-center lg:gap-32 gap-10">
         <div className="lg:w-[40%] w-full">
             <img
-              src="/img/gallery-9.png"
+              src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719226093/Ndi-Igbo%20Germany/gallery/gallery-9_iemlwh.png"
               alt=""
               className="w-full object-cover rounded-[10px]"
             />

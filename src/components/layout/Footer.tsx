@@ -60,8 +60,8 @@ function Footer() {
         <div className="flex justify-center items-center px-10 text-colorPrimary  mt-5">
           <p>Copyright © 2024 .Ndi-Igbo Germany | All Rights Reserved</p>
         </div>
-        <p className="text-sm text-[#ACACAC] text-center mt-1">
-          Site Credit to:
+        <p className="text-sm text-[#ACACAC] text-center mt-1 italic">
+        Designed by: <a href="https://greenmousetech.com/">Greenmouse Technologies</a> 
         </p>
       </div>
     </footer>
