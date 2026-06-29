@@ -15,6 +15,8 @@ const fetchGallery = async () => {
   return data.data;
 };
 
+const newImages = Array.from({ length: 8 }, (_, i) => `/new/gallery-new-${i + 1}.jpeg`);
+
 function Gallery() {
   const { data, error, isLoading } = useQuery(['gallery'], fetchGallery);
  
@@ -27,8 +29,14 @@ function Gallery() {
       <Banner page="Gallery" img="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719226095/Ndi-Igbo%20Germany/gallery/gallery-banner_vh9fdf.png" />
       <section>
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 w-full my-10">
-          
-         
+          {newImages.map((src) => (
+            <img
+              key={src}
+              src={src}
+              alt="Ndi Igbo Germany gallery"
+              className="object-cover object-center h-56 rounded-[10px] w-full"
+            />
+          ))}
           {data.map((item:IGallary) => (
             <img
               key={item.id}
