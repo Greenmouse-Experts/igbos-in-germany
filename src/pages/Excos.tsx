@@ -12,9 +12,11 @@ function Excos() {
             alt=""
             className="h-[420px] object-cover object-center "
           />
-          <div className="bg-colorPrimary  px-12 py-4 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
+          <div className="bg-colorPrimary  px-12 py-4 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]">
             <div>
-              <h6 className="text-xl font-semibold">Chief Uzoma Benjamin Chinaka </h6>
+              <h6 className="text-xl font-semibold">
+                Chief Uzoma Benjamin Chinaka{" "}
+              </h6>
               <p className="text-base text-center">(Agbawodike-Izu)</p>
               <p className="font-normal text-base mt-2">Coordinator NIG</p>
             </div>
@@ -26,22 +28,24 @@ function Excos() {
             alt=""
             className="h-[420px] object-cover object-center "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]">
             <div>
-              <h6 className="text-xl font-semibold ">Mr. J. Maurice Ifeanyi Ezeani</h6>
+              <h6 className="text-xl font-semibold ">
+                Mr. J. Maurice Ifeanyi Ezeani
+              </h6>
               <p className="font-normal text-base mt-2">Deputy Coordinator</p>
             </div>
           </div>
         </div>
         <div className=" flex flex-col justify-center">
           <img
-            src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1719224831/Ndi-Igbo%20Germany/excos-3_h1tmmt.png"
+            src="new_pro.jpeg"
             alt=""
             className="h-[420px] object-cover object-center "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]">
             <div>
-              <h6 className="text-xl font-semibold ">Uche Michael Onwuemenyi.</h6>
+              <h6 className="text-xl font-semibold ">CHIEF OBIY OGBODO</h6>
               <p className="font-normal text-base mt-2">PRO</p>
             </div>
           </div>
@@ -52,7 +56,7 @@ function Excos() {
             alt=""
             className="h-[420px] object-cover object-center "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]">
             <div>
               <h6 className="text-xl font-semibold ">Hon. Kingsley Onwubiko</h6>
               <p className="font-normal text-base mt-2">Treasury NIG</p>
@@ -65,7 +69,7 @@ function Excos() {
             alt=""
             className="h-[420px] object-cover object-center "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]">
             <div>
               <h6 className="text-xl font-semibold ">Chinasa Obimdi </h6>
               <p className="font-normal text-base mt-2">Financial secretary</p>
@@ -78,7 +82,7 @@ function Excos() {
             alt=""
             className="h-[420px] object-cover object-center "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]">
             <div>
               <h6 className="text-xl font-semibold ">Joseph Chinasa Ezeji</h6>
               <p className="font-normal text-base mt-2">Secretary</p>
@@ -91,9 +95,11 @@ function Excos() {
             alt=""
             className="h-[420px] object-cover object-center "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]">
             <div>
-              <h6 className="text-xl font-semibold ">High Chief Obyzed Obinnaya</h6>
+              <h6 className="text-xl font-semibold ">
+                High Chief Obyzed Obinnaya
+              </h6>
               <p className="font-normal text-base mt-2">Social Secretary</p>
             </div>
           </div>
@@ -104,7 +110,7 @@ function Excos() {
             alt=""
             className="h-[420px] object-cover object-center "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]">
             <div>
               <h6 className="text-xl font-semibold ">Mrs Martha Ngozi</h6>
               <p className="font-normal text-base mt-2">Provost</p>
@@ -117,7 +123,7 @@ function Excos() {
             alt=""
             className="h-[420px] object-cover object-center "
           />
-          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]" >
+          <div className="bg-colorPrimary  px-12 py-7 text-white flex  items-end justify-center w-full text-center rounded-b-[5px]">
             <div>
               <h6 className="text-xl font-semibold ">Nze Ezeanochie Nnamdi</h6>
               <p className="font-normal text-base mt-2">Ass Sec NIG</p>
